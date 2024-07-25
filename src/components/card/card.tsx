@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Button } from "../button/button"
 import { LoadingPage } from "../loading/loading_page"
 
@@ -26,7 +27,7 @@ export function CardFormations ({img, span, title, description}:CrdProjectProps)
                     bg-black bg-opacity-80 rounded-xl
                 `}>
                     <div className='w-full max-h-36 flex items-center justify-center'>
-                        <img src={img} alt='Project image' className='w-full h-full object-cover'/>
+                        <Image src={img} alt='Project image' className='w-full h-full object-cover'/>
                     </div>
                     <div>
                         <span className='text-gray-400 font-medium'>{span}</span>

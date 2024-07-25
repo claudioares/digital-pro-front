@@ -1,10 +1,13 @@
-import { CarouselCourses } from "./components/carousel/carousel.courses";
-import { Container } from "./components/container/container";
-import { dataFormations } from "./utils/data.formations";
+import { CarouselCourses } from "@/components/carousel/carousel.courses";
+import { Container } from "@/components/container/container";
+import { Header } from "@/components/Header/header";
+import { dataFormations } from "@/utils/data.formations";
 
-export function Home () {
+
+export default function Home () {
     return(
         <>
+            <Header />
             <div className="bg-zinc-900 w-full min-h-screen">
                 <Container>
                     <div className="flex flex-col gap-24">

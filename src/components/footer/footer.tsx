@@ -6,7 +6,7 @@ import facebook from '../../assets/social_icons/icons8-facebook.svg';
 import instagram from '../../assets/social_icons/icons8-instagram.svg';
 import youtube from '../../assets/social_icons/icons8-youtube.svg';
 import { Input } from '../input/input';
-import { handleNavigation } from '../../utils/useNavigate';
+import Image from 'next/image';
 export function Footer () {
     return(
         <>
@@ -15,7 +15,7 @@ export function Footer () {
                 <div className="grid grid-cols-3">
                     <section className='flex flex-col h-auto gap-10'>
                         <div>
-                            <img src={logo} alt="logo da empresa" className='w-44'/>
+                            <Image src={logo} alt="logo da empresa" className='w-44'/>
                             <ul>
                                 <li className='hover:text-yellow-500'><a href="">Sobre</a></li>
                                 <li className='hover:text-yellow-500'><a href="">Contato</a></li>
@@ -28,14 +28,14 @@ export function Footer () {
 
                     <section className='w-full h-full flex flex-col justify-center items-center gap-8'>
                         <div className='flex flex-col gap-8'>
-                            <Button nameButton={'Já sou aluno'} bg={'bg-green-700'} color={''} onClick={()=>handleNavigation('/login')}/>
+                            <Button nameButton={'Já sou aluno'} bg={'bg-green-700'} color={''} link={"/login"}/>
                             <Button nameButton={'Assessoria de imprensa'} bg={'bg-green-700'} color={''} />
                         </div>
                         <div className='flex'>
-                            <img src={linkedin} alt="logo do linkedin" className='w-20 cursor-pointer hover:scale-[104%] hover:transition-transform hover:duration-500'/>
-                            <img src={facebook} alt="logo do facebook" className='w-20 cursor-pointer hover:scale-[104%] hover:transition-transform hover:duration-500'/>
-                            <img src={instagram} alt="logo do instagram" className='w-20 cursor-pointer hover:scale-[104%] hover:transition-transform hover:duration-500'/>
-                            <img src={youtube} alt="logo do youtube" className='w-20 cursor-pointer hover:scale-[104%] hover:transition-transform hover:duration-500'/>
+                            <Image src={linkedin} alt="logo do linkedin" className='w-20 cursor-pointer hover:scale-[104%] hover:transition-transform hover:duration-500'/>
+                            <Image src={facebook} alt="logo do facebook" className='w-20 cursor-pointer hover:scale-[104%] hover:transition-transform hover:duration-500'/>
+                            <Image src={instagram} alt="logo do instagram" className='w-20 cursor-pointer hover:scale-[104%] hover:transition-transform hover:duration-500'/>
+                            <Image src={youtube} alt="logo do youtube" className='w-20 cursor-pointer hover:scale-[104%] hover:transition-transform hover:duration-500'/>
                         </div>
                     </section>
 

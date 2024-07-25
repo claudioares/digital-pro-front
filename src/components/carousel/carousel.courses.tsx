@@ -1,4 +1,4 @@
-// Carousel.js
+'use client'
 import { useState } from 'react';
 import { CourseCard } from '../card/course.card';
 

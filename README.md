@@ -1,43 +1,36 @@
-# Digital Pro (Projeto ainda em desenvolvimento)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Digital Pro é uma plataforma de ensino digital que oferece uma ampla variedade de stacks de ensino. Este projeto serve como uma demonstração para meu portfólio e para potenciais futuros clientes.
+## Getting Started
 
-## Índice
+First, run the development server:
 
-- [Visão Geral](#visão-geral)
-- [Recursos](#recursos)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Instalação](#instalação)
-- [Uso](#uso)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Contato](#contato)
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Visão Geral
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Digital Pro foi criado para fornecer uma plataforma abrangente e fácil de usar para o aprendizado de diferentes tecnologias e habilidades digitais. Com uma interface intuitiva e cursos bem estruturados, os usuários podem avançar em suas carreiras e adquirir novas habilidades de forma eficiente.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Recursos
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-- **Várias Stacks de Ensino**: Oferecemos cursos em desenvolvimento web, ciência de dados, DevOps, inteligência artificial, segurança da informação, e muito mais.
-- **Interface Intuitiva**: Navegação fácil e design limpo para uma melhor experiência do usuário.
-- **Certificados**: Receba certificados ao concluir cursos.
-- **Comunidade**: Participe de fóruns e grupos de estudo.
-- **Acompanhamento de Progresso**: Monitore seu progresso em tempo real.
+## Learn More
 
-## Tecnologias Utilizadas
+To learn more about Next.js, take a look at the following resources:
 
-- **Frontend**: React, Tailwind CSS
-- **Backend**: Node.js, Express.js
-- **Banco de Dados**: MongoDB
-- **Autenticação**: JWT (JSON Web Tokens)
-- **Hospedagem**: Heroku, Netlify
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Instalação
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Para rodar este projeto localmente, siga as etapas abaixo:
+## Deploy on Vercel
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/digital-pro.git
-   cd digital-pro
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

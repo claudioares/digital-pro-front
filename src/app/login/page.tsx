@@ -1,13 +1,13 @@
-import { Button } from "./components/button/button";
-import { Container } from "./components/container/container";
-import { Input } from "./components/input/input";
-import { Mask } from "./components/mask/mask";
-import logo from "../src/assets/logo.svg";
-import { handleNavigation } from "./utils/useNavigate";
-import { LoadingPage } from "./components/loading/loading_page";
+import { Button } from "../../components/button/button";
+import { Container } from "../../components/container/container";
+import { Input } from "../../components/input/input";
+import { Mask } from "../../components/mask/mask";
+import logo from "@/assets/logo.svg";
+import { LoadingPage } from "../../components/loading/loading_page";
+import Image from "next/image";
 
 
-export function Login () {
+export default function Login () {
   
     return(
         <>
@@ -40,7 +40,7 @@ export function Login () {
                                     <Button
                                         nameButton="Entrar" 
                                         bg="bg-yellow-400"
-                                        onClick={()=>handleNavigation('/home')}
+                                        link="home"
                                         color=""
                                     />
                                 </div>
@@ -51,8 +51,8 @@ export function Login () {
                                     `}>Ainda não é assinante?</span>
                                     <Button 
                                         nameButton="Assine agora" 
-                                        bg="bg-white" 
-                                        onClick={()=>handleNavigation('/')}
+                                        bg="bg-white"
+                                        link="/"
                                         color=""
                                     />
                                 </div>
@@ -60,12 +60,12 @@ export function Login () {
                         </Container>
                     </section>
                 <section className={`
-                     w-[50%] min-h-full bg-bg-login bg-center bg-cover
+                     w-[50%] min-h-full bg__login
                      hidden items-end justify-end relative
                     md:flex
                 `}>
                     <Mask />
-                    <img src={logo} alt="Logo da empresa" className="fixed w-52 h-52"/>
+                    <Image src={logo} alt="Logo da empresa" className="fixed w-52 h-52"/>
                 </section>
             </div>
             </LoadingPage>

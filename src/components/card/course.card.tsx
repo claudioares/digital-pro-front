@@ -1,3 +1,5 @@
+'use client'
+import Image from "next/image";
 import { TagsStatusCard } from "../tag-status-card/tag.status.card";
 
 type propsCarouselCourses = {
@@ -18,7 +20,7 @@ export function CourseCard ({stack, description, img, tags}:propsCarouselCourses
                     w-full h-96 bg-slate-400 rounded-t-3xl flex items-center justify-center
                     relative  
                 `}>
-                    <img src={img} alt="imagem da stack" className="h-full w-full object-cover absolute top-0 rounded-t-3xl"/>
+                    <Image src={img} alt="imagem da stack" className="h-full w-full object-cover absolute top-0 rounded-t-3xl"/>
                 </div>
                 <div className="w-auto h-full p-4 flex flex-col justify-around gap-4    ">
                     <div className="w-full flex gap-2 flex-wrap">
@@ -35,10 +37,6 @@ export function CourseCard ({stack, description, img, tags}:propsCarouselCourses
                         <p className="text-slate-50 font-light">
                             {description.split('').slice(0, 200).join('').concat('...')}
                         </p>
-                    </div>
-
-                    <div>
-                        barra de evolução
                     </div>
                 </div>
             </div>

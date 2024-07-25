@@ -1,7 +1,9 @@
+'use client'
 import { useEffect, useState } from 'react';
 import bunner01 from '../../assets/bunner01.svg'
 import bunner02 from '../../assets/bunner02.svg'
 import bunner03 from '../../assets/bunner03.svg'
+import Image from 'next/image';
 
 interface Image {
   src: string;
@@ -47,7 +49,7 @@ export function CarouselDefault () {
               index === activeImage ? 'z-10 opacity-100' : 'z-0 opacity-0'
             }`}
           >
-            <img
+            <Image
               src={image.src}
               alt={image.alt}
               width={300}

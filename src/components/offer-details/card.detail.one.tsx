@@ -1,4 +1,4 @@
-import { handleNavigation } from "../../utils/useNavigate";
+import Link from "next/link";
 
 export function CardDatailOne () {
     return (
@@ -20,12 +20,11 @@ export function CardDatailOne () {
                     </div>
 
                     <div className="w-full flex flex-col gap-2 justify-center items-center py-6">
-                        <button className={`
+                    <Link href="/subscribe"><button className={`
                             bg-green-700 text-white text-center w-auto h-auto px-28 py-2 rounded-2xl
                             hover:bg-slate-800
                         `}
-                        onClick={()=>handleNavigation("/subscribe")}
-                        >ASSINE AGORA</button>
+                        >ASSINE AGORA</button></Link>
                         <span>7 Dias de garantia total</span>
                     </div>
 
