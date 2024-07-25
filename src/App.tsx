@@ -7,6 +7,7 @@ import { Footer } from "./components/footer/footer";
 import { LoadingPage } from "./components/loading/loading_page";
 import { OfferDetails } from "./components/offer-details/offer.details";
 import { dataFormations } from "./utils/data.formations";
+import { Outlet } from 'react-router-dom';
 
 type CrdProjectProps = {
   img: string,
@@ -23,6 +24,7 @@ export function App() {
     <LoadingPage>
       <div className="w-full min-h-screen bg-gradient-to-b from-zinc-950 to-zinc-900 mb-24">
         <Header />
+        <Outlet />
         <CarouselDefault />
         <Container>
           <h1 className="text-4xl font-semibold border-l-[0.6rem] border-yellow-500 px-4 text-slate-300 my-10">Saiba mais sobre nossas formações</h1>
