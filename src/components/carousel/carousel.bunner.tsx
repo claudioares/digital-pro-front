@@ -24,12 +24,6 @@ export function CarouselDefault () {
     });
   };
 
-  const handlePrevious = () => {
-    setActiveImage((prevActiveImage) => {
-      return prevActiveImage === 0 ? images.length - 1 : prevActiveImage - 1;
-    });
-  };
-
     // Automatic image switching
     useEffect(() => {
       const intervalId = setInterval(() => {
@@ -59,20 +53,6 @@ export function CarouselDefault () {
           </div>
         ))}
       </div>
-
-      <button
-        className="absolute z-40 top-1/2 -translate-y-1/2 right-4 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-        onClick={handleNext}
-      >
-        Próximo
-      </button>
-
-      <button
-        className="absolute z-40 top-1/2 -translate-y-1/2 left-4 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
-        onClick={handlePrevious}
-      >
-        Anterior
-      </button>
     </div>
   );
 };

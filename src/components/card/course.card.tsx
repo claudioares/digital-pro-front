@@ -24,10 +24,11 @@ export function CourseCard ({stack, description, img, tags}:propsCarouselCourses
                 </div>
                 <div className="w-auto h-full p-4 flex flex-col justify-around gap-4    ">
                     <div className="w-full flex gap-2 flex-wrap">
-                        {tags.map(tag => (
+                        {tags.map((tag, index) => (
                             <TagsStatusCard 
                                 status={tag} 
                                 colorText="text-slate-200"
+                                key={index}
                             />
                         ))}
                        
