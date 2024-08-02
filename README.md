@@ -2,7 +2,7 @@
 
 Digital Pro é uma plataforma de ensino digital que oferece uma ampla variedade de stacks de ensino. Este projeto serve como uma demonstração para meu portfólio e para potenciais futuros clientes.
 
-## Índice
+## Índice do projeto
 
 - [Visão Geral](#visão-geral)
 - [Recursos](#recursos)
@@ -41,3 +41,4 @@ Para rodar este projeto localmente, siga as etapas abaixo:
    ```bash
    git clone https://github.com/seu-usuario/digital-pro.git
    cd digital-pro
+   ```
